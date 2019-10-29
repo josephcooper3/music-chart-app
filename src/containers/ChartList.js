@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TrackList from '../components/TrackList';
 
 class ChartList extends Component {
 
@@ -16,7 +17,9 @@ class ChartList extends Component {
   }
 
   render() {
-    return "Hello!"
+    return (
+      <TrackList data={this.state.data}></TrackList>
+    )
   }
 
 }
